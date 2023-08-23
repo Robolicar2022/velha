@@ -1,0 +1,211 @@
+<html>
+<head>
+<title> Java Script Imagem</title>
+<link rel="stylesheet" type="text/css" href="folha.css">
+</head>
+
+
+<body id="bd1">
+
+
+<button id="btn1" onclick="aaa()">OK </button>
+<button id="btn2" onclick="sorteio()">OK </button>
+<table border=1 width=600 height=600>
+<tr><td id="div1"></td><td id="div2"></td><td id="div3"></td></tr>
+<tr><td id="div4"></td><td id="div5"></td><td id="div6"></td></tr>
+<tr><td id="div7"></td><td id="div8"></td><td id="div9"></td></tr>
+</table>
+
+
+
+
+<p id="texto">?<p>
+<p id="txt1">?<p>
+<script>
+
+
+
+
+
+function aaa()
+{
+ var cont=0;
+var Valor1 = Math.floor((Math.random() * 6) + 1);
+var Valor2 = Math.floor((Math.random() * 6) + 1);
+var Valor3 = Math.floor((Math.random() * 6) + 1);
+
+var Valor4 = Math.floor((Math.random() * 6) + 1);
+var Valor5 = Math.floor((Math.random() * 6) + 1);
+var Valor6 = Math.floor((Math.random() * 6) + 1);
+
+var Valor7 = Math.floor((Math.random() * 6) + 1);
+var Valor8 = Math.floor((Math.random() * 6) + 1);
+var Valor9 = Math.floor((Math.random() * 6) + 1);
+
+var foto1=document.getElementById('div1');
+var foto2=document.getElementById('div2');
+var foto3=document.getElementById('div3');
+
+var foto4=document.getElementById('div4');
+var foto5=document.getElementById('div5');
+var foto6=document.getElementById('div6');
+
+var foto7=document.getElementById('div7');
+var foto8=document.getElementById('div8');
+var foto9=document.getElementById('div9');
+
+foto1.className='caixa'+Valor1;
+foto2.className='caixa'+Valor2;
+foto3.className='caixa'+Valor3;
+
+foto4.className='caixa'+Valor4;
+foto5.className='caixa'+Valor5;
+foto6.className='caixa'+Valor6;
+
+foto7.className='caixa'+Valor7;
+foto8.className='caixa'+Valor8;
+foto9.className='caixa'+Valor9;
+
+if((Valor1== Valor2) && (Valor2==Valor3))
+{
+ cont++;
+}
+
+if((Valor4== Valor5) && (Valor5==Valor6))
+{
+ cont++;
+}
+
+if((Valor7== Valor8) && (Valor8==Valor9))
+{
+ cont++;
+}
+
+if((Valor1== Valor4) && (Valor4==Valor7))
+{
+ cont++;
+}
+
+if((Valor2== Valor5) && (Valor5==Valor8))
+{
+ cont++;
+}
+
+if((Valor3== Valor6) && (Valor6==Valor9))
+{
+ cont++;
+}
+
+if((Valor1== Valor5) && (Valor5==Valor9))
+{
+ cont++;
+}
+
+if((Valor3== Valor5) && (Valor5==Valor7))
+{
+ cont++;
+}
+
+
+
+document.getElementById('texto').innerHTML=cont;
+
+
+}
+var cont=0,contador=0;
+function sorteio(){
+contador=0;
+cont=0;
+while(cont<3){
+	cont=0;
+	var Valor1 = Math.floor((Math.random() * 6) + 1);
+var Valor2 = Math.floor((Math.random() * 6) + 1);
+var Valor3 = Math.floor((Math.random() * 6) + 1);
+
+var Valor4 = Math.floor((Math.random() * 6) + 1);
+var Valor5 = Math.floor((Math.random() * 6) + 1);
+var Valor6 = Math.floor((Math.random() * 6) + 1);
+
+var Valor7 = Math.floor((Math.random() * 6) + 1);
+var Valor8 = Math.floor((Math.random() * 6) + 1);
+var Valor9 = Math.floor((Math.random() * 6) + 1);
+
+var foto1=document.getElementById('div1');
+var foto2=document.getElementById('div2');
+var foto3=document.getElementById('div3');
+
+var foto4=document.getElementById('div4');
+var foto5=document.getElementById('div5');
+var foto6=document.getElementById('div6');
+
+var foto7=document.getElementById('div7');
+var foto8=document.getElementById('div8');
+var foto9=document.getElementById('div9');
+
+foto1.className='caixa'+Valor1;
+foto2.className='caixa'+Valor2;
+foto3.className='caixa'+Valor3;
+
+foto4.className='caixa'+Valor4;
+foto5.className='caixa'+Valor5;
+foto6.className='caixa'+Valor6;
+
+foto7.className='caixa'+Valor7;
+foto8.className='caixa'+Valor8;
+foto9.className='caixa'+Valor9;
+
+if((Valor1== Valor2) && (Valor2==Valor3))
+{
+ cont++;
+}
+
+if((Valor4== Valor5) && (Valor5==Valor6))
+{
+ cont++;
+}
+
+if((Valor7== Valor8) && (Valor8==Valor9))
+{
+ cont++;
+}
+
+if((Valor1== Valor4) && (Valor4==Valor7))
+{
+ cont++;
+}
+
+if((Valor2== Valor5) && (Valor5==Valor8))
+{
+ cont++;
+}
+
+if((Valor3== Valor6) && (Valor6==Valor9))
+{
+ cont++;
+}
+
+if((Valor1== Valor5) && (Valor5==Valor9))
+{
+ cont++;
+}
+
+if((Valor3== Valor5) && (Valor5==Valor7))
+{
+ cont++;
+}
+
+contador++;
+
+}
+
+	
+	
+	document.getElementById('txt1').innerHTML=contador;
+
+	
+}
+</script>
+
+
+</body>
+</html>
